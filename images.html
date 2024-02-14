@@ -1,0 +1,93 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        
+        <title>Automatic Image Slider</title>
+        <style>
+            body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfbfb;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #adadad;
+  margin-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  transition: all 1s ease;
+}
+
+.slider {
+  width: 550px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 3px 20px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 150px;
+}
+
+img {
+  width: 550px;
+  height: 350px;
+  border-radius: 3px;
+}
+
+.pagination-dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.dot {
+  width: 20px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #d6d6d6;
+}
+
+.dot.active {
+  background-color: #fe6a5c;
+}
+
+        </style>
+      </head>
+      <body>
+        
+    
+        <div class="slider">
+          <ul>
+            <li><img src="image1.jpeg" alt="image one"></li>
+            <li><img src="image2.webp" alt="image two" /></li>
+            <li><img src="image3.jpg" alt="image three" /></li>
+            <li><img src="image4.jpg" alt="image four" /></li>
+            <li><img src="image5.jpg" alt="image five"></li>
+          </ul>
+        </div>
+    
+        <div class="pagination-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+       
+        <script src="script.js"></script>
+    
+</body>
+</html>
